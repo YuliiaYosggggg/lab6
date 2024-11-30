@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення успішне</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='success.css') }}">
+</head>
+<body>
+    <div class="success-container">
+        <h1>Дякуємо за ваше замовлення, {{ name }}!</h1>
+        <div class="success-details">
+            <p>Ваші дані:</p>
+            <ul>
+                <li><strong>Електронна пошта:</strong> {{ email }}</li>
+                <li><strong>Телефон:</strong> {{ phone }}</li>
+                <li><strong>Місто відправлення:</strong> {{ departure_city }}</li>
+                <li><strong>Місто прибуття:</strong> {{ destination_city }}</li>
+                <li><strong>Дата подорожі:</strong> {{ travel_date }}</li>
+                <li><strong>Тип квитка:</strong> {{ ticket_type }}</li>
+            </ul>
+            <p>Ми з вами зв’яжемося найближчим часом. Гарної подорожі!</p>
+        </div>
+    </div>
+</body>
+</html>
